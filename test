@@ -1,0 +1,310 @@
+# I am an automation tester.  
+# Please create a detailed Markdown (.md) document.  
+# The content should be a comprehensive checklist for approaching a new automation test repository.  
+
+# The document must include the following sections:  
+# Automation Test Repository Checklist
+
+## 1. Repository Overview  
+## 2. Technologies and Tools  
+## 3. Dependencies & Package Management  
+## 4. Configuration & Setup  
+## 5. Access & Permissions  
+## 6. Test Data Management  
+## 7. Test Environment Management  
+## 8. How to Run Tests  
+## 9. Test Tagging & Filtering  
+## 10. Reporting & Logging  
+## 11. CI/CD Integration  
+## 12. Step-by-step Workflow (from cloning repo to first test commit)  
+## 13. Code Style & Convention  
+## 14. Best Practices  
+## 15. Flaky Test & Reliability  
+## 16. Error Handling & Debugging (screenshots, retries, logs)  
+## 17. Code Quality & Coverage  
+## 18. Security & Compliance  
+## 19. Scaling & Optimization  
+## 20. Parallel Execution & Cross-Browser / Cross-Platform  
+## 21. How to Implement a New Test Case  
+## 22. Documentation & Knowledge Sharing  
+## 23. Versioning & Branching Strategy  
+## 24. Observability & Metrics (execution trends, dashboards)  
+## 25. Onboarding & Exit Criteria  
+## 26. Additional Checklist  
+
+
+# Requirements:  
+# - Use clear Markdown heading hierarchy (#, ##, ###).  
+# - All checklists must use Markdown checkbox format: [ ].  
+# - Each section should be detailed and practical (not just high-level).  
+# - Provide real-world examples of commands where relevant (e.g., mvn test, npm test, pytest -m "smoke").  
+
+
+# Automation Test Repository Checklist
+
+## Requirements for This Checklist
+- [ ] Use a clear Markdown heading hierarchy (#, ##, ###) for easy navigation.  
+- [ ] All checklists must use Markdown checkbox format: `[ ]`.  
+# - Each section should be detailed and practical (not just high-level).  
+- [ ] Provide real-world examples of commands where relevant, e.g.:  
+  - `mvn test` for Maven-based Java projects  
+  - `pytest -m "smoke"` for Pytest test markers  
+  - `npm test` for Node.js projects using Mocha/Jest/Cypress  
+  - `docker-compose run test` for running tests in a Docker environment  
+- [ ] Include examples of folder structures, file naming conventions, and configuration files....  
+- [ ] Include recommended best practices, common pitfalls, and troubleshooting tips....
+- [ ] Support both manual and CI/CD automated execution examples....
+- [ ] Include optional advanced usage examples (parallel execution, cross-browser testing, mobile testing, reporting).  
+- [ ] Ensure the checklist is modular, so sections can be reused or extended per project needs.  
+...
+
+# Automation Test Repository Checklist
+
+## 1. Repository Overview
+- [ ] Type of repository (UI, API, Mobile, Performance)  
+- [ ] Main purpose of repository (Regression, Smoke, E2E)  
+- [ ] Framework used (Selenium, Playwright, Cypress, custom)  
+- [ ] Folder structure (`tests/`, `src/`, `config/`, `reports/`)  
+- [ ] Naming conventions for test files, classes, functions  
+- [ ] Repository owner/maintainer  
+
+---
+
+## 2. Technologies and Tools
+- [ ] Programming language (Java, Python, JS/TS, C#)  
+- [ ] Testing framework (JUnit, TestNG, Pytest, Mocha, Jest)  
+- [ ] Automation library/tool (Selenium, Playwright, Appium, RestAssured)  
+- [ ] Dependency manager (Maven/Gradle, pip, npm/yarn)  
+- [ ] Linters/formatters (ESLint, Prettier, Checkstyle, Black)  
+- [ ] Reporting libraries (Allure, Extent, Mochawesome)  
+- [ ] CI/CD tools (GitHub Actions, Jenkins, GitLab CI)  
+- [ ] Supporting utilities (Docker, Faker, WireMock)  
+
+---
+
+## 3. Dependencies & Package Management
+- [ ] Dependencies and versions  
+- [ ] Installation commands  
+- [ ] Lock files present (`package-lock.json`, `requirements.txt`, `pom.xml`)  
+
+---
+
+## 4. Configuration & Setup
+- [ ] Environment requirements  
+- [ ] Configuration files (`.env`, `config.json`, `settings.xml`)  
+- [ ] Secrets management (API keys, tokens)  
+- [ ] Docker/Docker Compose support  
+- [ ] Basic test command to verify setup  
+- [ ] Troubleshooting instructions  
+
+---
+
+## 5. Access & Permissions
+- [ ] Repository access (clone/pull/push)  
+- [ ] Branch protection rules (PR review, required checks)  
+- [ ] Access to secrets (API keys, DB credentials)  
+- [ ] Access to test environments (staging, UAT, prod-like)  
+- [ ] CI/CD permissions (GitHub Actions, Jenkins agents)  
+- [ ] Onboarding steps for new testers  
+
+---
+
+## 6. Test Data Management
+- [ ] Test data storage (`fixtures/`, `resources/`, DB seed, API mocks)  
+- [ ] Environment-specific data (local, staging, production-like)  
+- [ ] Cleanup/reset mechanisms (DB rollback, API cleanup)  
+- [ ] Use of mock/stub tools (WireMock, MSW, Mockito)  
+- [ ] Naming conventions for data files (`users.json`, `orders.csv`)  
+- [ ] Support for data-driven testing (CSV, JSON, Excel, DB queries)  
+- [ ] Documentation for adding/updating test data  
+
+---
+
+## 7. Test Environment Management
+- [ ] Available environments (local, staging, UAT, prod-like)  
+- [ ] Environment configurations (URLs, DB, API endpoints)  
+- [ ] Mechanism to switch environments (ENV vars, config profiles)  
+- [ ] Docker/Docker Compose setup for local environments  
+- [ ] Integration with dependent services (DB, Redis, Kafka, MQ)  
+- [ ] Environment reset/seed strategy  
+- [ ] Monitoring environment health (availability, logs)  
+
+## 8. How to Run Tests
+- [ ] Command to run all tests (`mvn test`, `pytest`, `npm run test`)  
+- [ ] Running tests by tag/marker/group (`pytest -m smoke`, `mvn -Dgroups=regression`)  
+- [ ] Parallel execution setup (`pytest-xdist`, TestNG parallel)  
+- [ ] Running tests on different environments (local, staging)  
+- [ ] Running tests on cloud services (Selenium Grid, BrowserStack, SauceLabs)  
+- [ ] Docker commands to run tests (`docker-compose up test`)  
+- [ ] Debugging instructions (verbose logs, single test runs, breakpoints)  
+
+---
+
+## 9. Test Tagging & Filtering
+- [ ] Defined test categories/tags (smoke, regression, E2E, performance)  
+- [ ] Instructions to filter tests by tags  
+- [ ] Consistent tagging across the repo  
+- [ ] Guidelines for adding new tags  
+
+---
+
+## 10. Reporting & Logging
+- [ ] Reporting library used (Allure, Extent, Mochawesome)  
+- [ ] Report generation process  
+- [ ] Include screenshots/logs for failed tests  
+- [ ] Report storage location (`reports/`, CI artifacts)  
+- [ ] Meaningful and searchable logs  
+
+---
+
+## 11. CI/CD Integration
+- [ ] CI/CD tools used (GitHub Actions, Jenkins, GitLab CI)  
+- [ ] Automatic test execution on PR/commit  
+- [ ] Manual trigger instructions for test runs  
+- [ ] Archiving test artifacts (reports, screenshots)  
+- [ ] Notification process for test results (Slack, Email, Teams)  
+
+---
+
+## 12. Step-by-step Workflow
+- [ ] Steps to clone repository  
+- [ ] Installing dependencies  
+- [ ] Configuring environment variables/secrets  
+- [ ] Running initial smoke tests  
+- [ ] Committing new tests and creating PRs  
+- [ ] Review and merge workflow  
+
+---
+
+## 13. Code Style & Convention
+- [ ] Coding style rules (indentation, naming, formatting)  
+- [ ] Linters/formatters in use (ESLint, Prettier, Checkstyle, Black)  
+- [ ] Folder structure and file organization  
+- [ ] Test naming conventions (functions, classes)  
+- [ ] Guidelines for readable and maintainable test code  
+
+---
+
+## 14. Best Practices
+- [ ] Tests are independent, execution order does not matter  
+- [ ] Use Page Object Model (POM) / API Client patterns  
+- [ ] Prefer explicit waits over hard sleeps  
+- [ ] Avoid test duplication, reuse utilities/fixtures  
+- [ ] Separate test logic from business logic  
+- [ ] Consistent test results across environments  
+- [ ] Document lessons learned in team knowledge base  
+
+---
+
+## 15. Flaky Test & Reliability
+- [ ] List of known flaky tests  
+- [ ] Retry configuration in framework (`pytest-rerunfailures`, TestNG `retryAnalyzer`)  
+- [ ] Proper synchronization (explicit waits, stable locators)  
+- [ ] Run flaky tests in isolation  
+- [ ] Logging around unstable areas (network calls, UI elements)  
+- [ ] Periodic review and fix of flaky tests  
+
+---
+
+## 16. Error Handling & Debugging
+- [ ] Capture screenshots for failed UI tests  
+- [ ] Enable video recording if supported (Cypress, Playwright)  
+- [ ] Store failed test artifacts (logs, screenshots) in CI  
+- [ ] Retry for intermittent failures  
+- [ ] Verbose logs for API requests/responses  
+- [ ] Clear stack traces in logs  
+- [ ] Document debugging steps for common failures  
+
+---
+
+## 17. Code Quality & Coverage
+- [ ] Static code analysis (SonarQube, CodeQL, ESLint)  
+- [ ] Test coverage measurement (JaCoCo, Coverage.py, Istanbul)  
+- [ ] Minimum coverage thresholds in CI  
+- [ ] Track coverage trends over time  
+- [ ] Meaningful assertions (not just status codes)  
+- [ ] Review PRs for test quality, not quantity  
+
+---
+
+## 18. Security & Compliance
+- [ ] Secrets are not hardcoded (Vault, Doppler, GitHub Secrets)  
+- [ ] Mask sensitive data in logs/reports  
+- [ ] Secure coding practices in test utilities  
+- [ ] Validate dependencies (OWASP Dependency-Check, npm audit)  
+- [ ] Security smoke tests (authentication, authorization)  
+- [ ] Compliance with standards (GDPR, HIPAA if relevant)  
+
+---
+
+## 19. Scaling & Optimization
+- [ ] Optimize test suite runtime (reduce redundancy)  
+- [ ] Prioritize critical tests (smoke, regression, nightly)  
+- [ ] Split large test suites into modular pipelines  
+- [ ] Cache dependencies in CI/CD for faster builds  
+- [ ] Use lightweight stubs/mocks for non-critical dependencies  
+- [ ] Review and refactor slow tests regularly  
+
+---
+
+## 20. Parallel Execution & Cross-Browser / Cross-Platform
+- [ ] Parallel execution enabled (`pytest-xdist`, TestNG parallel, Cypress)  
+- [ ] Multiple browser support (Chrome, Firefox, Safari, Edge)  
+- [ ] Cloud platform integration (BrowserStack, Sauce Labs, LambdaTest)  
+- [ ] Mobile device compatibility (Appium, Playwright Mobile)  
+- [ ] Test isolation in parallel runs  
+- [ ] Setup for distributed tests (Selenium Grid, Kubernetes)  
+
+---
+
+## 21. How to Implement a New Test Case
+- [ ] Create test file following naming conventions  
+- [ ] Add test description/objective in comments/docstring  
+- [ ] Reuse existing page objects/API clients  
+- [ ] Data-driven testing if applicable  
+- [ ] Add proper tags (smoke, regression, e2e)  
+- [ ] Run test locally and verify results  
+- [ ] Push changes and create PR  
+- [ ] CI/CD pipeline passes before merge  
+
+---
+
+## 22. Documentation & Knowledge Sharing
+- [ ] Maintain `README.md` (setup, run instructions, troubleshooting)  
+- [ ] `CONTRIBUTING.md` for coding/testing standards  
+- [ ] Document environment-specific configs  
+- [ ] Internal docs/wikis for detailed guides  
+- [ ] Share best practices/lessons in team meetings  
+- [ ] Document all new tools/frameworks  
+
+---
+
+## 23. Versioning & Branching Strategy
+- [ ] Git branching strategy (GitFlow, trunk-based, feature branching)  
+- [ ] Semantic versioning for test framework releases  
+- [ ] Tag stable releases for reference  
+- [ ] Branch naming conventions (`feature/`, `bugfix/`, `hotfix/`)  
+- [ ] Protect main branches with PR reviews and CI checks  
+- [ ] Document branching strategy in `CONTRIBUTING.md`  
+
+---
+
+## 24. Observability & Metrics
+- [ ] Track test execution trends (pass/fail rates)  
+- [ ] Publish dashboards (Allure, Grafana, Kibana, Jenkins Blue Ocean)  
+- [ ] Measure test execution time per suite  
+- [ ] Monitor flaky test trends over time  
+- [ ] Collect logs/results for post-mortem analysis  
+- [ ] Share reports automatically with team  
+
+---
+
+## 25. Onboarding & Exit Criteria
+- [ ] Onboarding guide for new testers (setup, tools, workflows)  
+- [ ] Local environment setup works out-of-the-box  
+- [ ] Minimal knowledge required before committing tests  
+- [ ] Sample test cases for reference  
+- [ ] Exit criteria for project completion (coverage %, stability, CI/CD integration)  
+- [ ] Handover checklist for team transitions  
+
+---
